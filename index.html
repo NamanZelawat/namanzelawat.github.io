@@ -9,5 +9,12 @@
   <body>
     <p class="author">Naman Zelawat</p>
     <button id="dark-mode-toggle">Toggle dark mode</button>
+    <script>
+      document
+        .querySelector("#dark-mode-toggle")
+        .addEventListener("click", () => {
+          document.body.classList.toggle("latex-dark");
+        });
+    </script>
   </body>
 </html>
