@@ -8,6 +8,7 @@
     <style>
       h1 {
         padding: 20px;
+        margin-bottom: 0;
       }
       p {
         font-size: 1.2rem;
@@ -72,17 +73,33 @@
       #tab3:checked ~ #content3 {
         display: block;
       }
+      .nav-bar {
+        text-align: center;
+        font-family: "Computer Modern", serif; /* Optional: for LaTeX aesthetic */
+        font-size: 1.1em;
+        margin-top: 0;
+      }
+
+      .nav-bar a {
+        text-decoration: none;
+        color: inherit; /* Keeps it neutral, blends with text */
+        padding: 0 0.3em;
+        cursor: pointer;
+        transition: opacity 0.2s ease;
+      }
+
+      .nav-bar a:hover {
+        opacity: 0.7; /* Just enough to hint interactivity */
+      }
     </style>
   </head>
   <body>
     <h1>Naman Zelawat</h1>
-    <script>
-      document
-        .querySelector("#dark-mode-toggle")
-        .addEventListener("click", () => {
-          document.body.classList.toggle("latex-dark");
-        });
-    </script>
+    <div class="nav-bar">
+      <a href="/cv.html">CV</a> | <a href="/experience.html">Experience</a> |
+      <a href="/education.html">Education</a> |
+      <a href="/projects.html">Projects</a>
+    </div>
 
     <h3>About Me</h3>
     <hr />
@@ -207,9 +224,9 @@
 
       <!-- 2. Labels in their table-row container -->
       <div class="tab-labels">
-        <label for="tab1">Overview</label>
-        <label for="tab2">Examples</label>
-        <label for="tab3">References</label>
+        <label for="tab1">Skills</label>
+        <label for="tab2">Position of responsibility</label>
+        <label for="tab3">Extra-Curricular</label>
       </div>
 
       <!-- 3. Content panels as siblings of the radios -->
