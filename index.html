@@ -19,6 +19,59 @@
         font-size: 1.2rem;
         color: #111;
       }
+      body {
+        max-width: 750px;
+      }
+      /* Container wrapper */
+      .latex-tabs {
+        font-family: inherit;
+        margin: 2em 0;
+      }
+
+      /* Hide native radios */
+      .latex-tabs input[type="radio"] {
+        display: none;
+      }
+
+      /* Tab labels as table row */
+      .latex-tabs .tab-labels {
+        display: table;
+        table-layout: fixed;
+        width: 100%;
+        margin-bottom: -1px; /* pull up border of content */
+      }
+
+      .latex-tabs .tab-labels label {
+        display: table-cell;
+        text-align: center;
+        padding: 0.75em 1em;
+        border: 1px solid #000;
+        border-bottom: none;
+        background: #f5f5f5;
+        cursor: pointer;
+        user-select: none;
+      }
+
+      /* Active tab look */
+      .latex-tabs input[type="radio"]:checked + label {
+        background: #fff;
+        font-weight: bold;
+      }
+
+      /* Content panels styled like table */
+      .latex-tabs .tab-content {
+        display: none;
+        border: 1px solid #000;
+        padding: 1em;
+        background: #fff;
+      }
+
+      /* Show panel when its radio is checked */
+      #tab1:checked ~ #content1,
+      #tab2:checked ~ #content2,
+      #tab3:checked ~ #content3 {
+        display: block;
+      }
     </style>
   </head>
   <body>
@@ -41,6 +94,7 @@
       models using <strong>PyTorch</strong>, with a strong focus on
       production-ready systems and scalable ML infrastructure.
     </p>
+    <br />
     <p>
       Currently exploring various aspects of deep learning and how to
       efficiently deploy and scale models in real-world environments. I’m also
@@ -67,32 +121,62 @@
     <hr />
     <ul>
       <li>
-        <strong>Machine Learning Engineer</strong> - Money Forward Inc.
-        (2024-Present)
+        <strong>Machine Learning Engineer</strong> - Money Forward Inc. (Dec.
+        2024-Present)
       </li>
       <ul>
+        <li>
+          Worked on research and development of machine learning models for
+          in-house projects, focusing on document parsing tasks.
+        </li>
         <li>
           Maintaining ML systems using SOTA models at scale, migrating legacy
           code to Python, and leading workflow and deployment enhancements.
         </li>
-        <li>Domain: Machine learning, Software engineering.</li>
+        <li>
+          Domain: Machine learning, Image processing, Natural language
+          processing, Software engineering.
+        </li>
       </ul>
       <li>
-        <strong>Software Engineer</strong> - Money Forward Inc. (2022-2024)
+        <strong>Software Engineer</strong> - Money Forward Inc. (Dec. 2022- Nov.
+        2024)
       </li>
       <ul>
         <li>
           Worked on creating and maintaining high availability and low latency
           microservices, developed services from scratch and mentored 2 interns.
         </li>
-        <li>Domain: Machine learning, Software engineering.</li>
+        <li>
+          Developed a microservice working at the forefront of the company’s
+          products, handling around 1 million requests per day.
+        </li>
+        <li>Domain: Microservices, Infrastructure, Software engineering.</li>
       </ul>
       <li>
-        <strong>Machine Learning Engineer</strong> - Money Forward Inc.
-        (2024-Present)
+        <strong>Frontend/AI development intern</strong> - Yum! Brands. (May
+        2021- July 2021)
       </li>
       <ul>
-        <li>Short description...</li>
+        <li>
+          Optimized AI models to enhance marketing analytics through user
+          activity prediction. Developed a dashboard interaction tracking system
+          and explored models ranging from MLPs with Fourier features to RNN
+          architectures like GRU and LSTM for forecasting user behavior with
+          efficiency and accuracy.
+        </li>
+      </ul>
+      <li>
+        <strong>Full stack developer & Instructor</strong> - Newton School.
+        (Oct. 2020- Nov 2020)
+      </li>
+      <ul>
+        <li>
+          Mentored aspiring developers at Newton School, guiding them through
+          full-stack application development and hosting programming contests to
+          reinforce learning. Discovered a passion for simplifying complex tech
+          concepts and empowering others through hands-on problem solving.
+        </li>
       </ul>
     </ul>
 
@@ -115,7 +199,30 @@
 
     <h3>Portfolio</h3>
     <hr />
-    <p>WIP...</p>
+    <div class="latex-tabs">
+      <!-- 1. Radios as direct children -->
+      <input type="radio" id="tab1" name="tabs" checked />
+      <input type="radio" id="tab2" name="tabs" />
+      <input type="radio" id="tab3" name="tabs" />
+
+      <!-- 2. Labels in their table-row container -->
+      <div class="tab-labels">
+        <label for="tab1">Overview</label>
+        <label for="tab2">Examples</label>
+        <label for="tab3">References</label>
+      </div>
+
+      <!-- 3. Content panels as siblings of the radios -->
+      <div id="content1" class="tab-content">
+        <p>Content for Overview…</p>
+      </div>
+      <div id="content2" class="tab-content">
+        <p>Content for Examples…</p>
+      </div>
+      <div id="content3" class="tab-content">
+        <p>Content for References…</p>
+      </div>
+    </div>
 
     <h3>Contact</h3>
     <hr />
