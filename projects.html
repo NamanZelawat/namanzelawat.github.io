@@ -24,122 +24,135 @@
         color: #111;
       }
       body {
-        max-width: 750px;
+        max-width: 800px;
+        padding: 1.5rem 0rem;
+      }
+      /* The main container for the research paper card */
+      .latex-card {
+        background: #ffffff;
+        border: 1px solid #d1d1d1;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+        /* max-width: 600px; */
+        width: 100%;
+        padding: 2.5rem 3rem;
+        color: #333;
+        line-height: 1.6;
+        border-radius: 4px;
       }
     </style>
   </head>
   <body>
-    <h1>Projects</h1>
+    <div class="latex-card">
+      <h1>Projects</h1>
 
-    <ul>
-      <li>
-        <strong>ViT paper implementation using PyTorch</strong>
-      </li>
-      <ul>
-        <li>
-          I implemented the Vision Transformer (ViT) architecture from scratch,
-          visualizing the embedding creation process and training the model on
-          the Food-101 dataset for image classification. To further enhance
-          performance, I incorporated transfer learning by leveraging pretrained
-          weights from PyTorch models, which significantly improved the overall
-          accuracy.
-        </li>
-        <img
-          src="./assets/transformer.png"
-          alt="Image patches"
-          ,
-          width="300"
-          style="display: block; margin-left: auto; margin-right: auto"
-        />
-        <li>
-          <strong>Domain</strong>: Paper implementation, Computer Vision, Deep
-          Learning, PyTorch.
-        </li>
-        <li>
-          <a
-            href="https://github.com/NamanZelawat/Gym/blob/master/pytorch/paper_replication.ipynb"
-            >Code</a
-          >
-        </li>
-      </ul>
+      <h3>ViT paper implementation using PyTorch</h3>
+      <hr />
+      <p>
+        I implemented the Vision Transformer (ViT) architecture from scratch,
+        visualizing the embedding creation process and training the model on the
+        Food-101 dataset for image classification. To further enhance
+        performance, I incorporated transfer learning by leveraging pretrained
+        weights from PyTorch models, which significantly improved the overall
+        accuracy.
+      </p>
+      <br />
+      <img
+        src="./assets/transformer.png"
+        alt="Image patches"
+        ,
+        width="300"
+        style="display: block; margin-left: auto; margin-right: auto"
+      />
+      <br />
+      <p>
+        <strong>Domain</strong>: Paper implementation, Computer Vision, Deep
+        Learning, PyTorch.
+      </p>
+      <p>
+        <strong>Code</strong>:
+        <a
+          href="https://github.com/NamanZelawat/Gym/blob/master/pytorch/paper_replication.ipynb"
+          >Link</a
+        >
+      </p>
 
-      <li>
-        <strong>Transfer learning using PyTorch</strong>
-      </li>
-      <ul>
-        <li>
-          I utilized pretrained EfficientNet-B0 weights to classify specific
-          subcategories of the Food-101 dataset, testing the model’s
-          generalization on real-world data beyond the test set. To streamline
-          the workflow, I developed custom wrappers that simplified data
-          preparation, training, evaluation, and visualization, making the
-          experimentation process more efficient and reproducible.
-        </li>
-        <img
-          src="./assets/transfer.png"
-          alt="Image patches"
-          ,
-          width="300"
-          style="display: block; margin-left: auto; margin-right: auto"
-        />
-        <li>
-          <strong>Domain</strong>: Transfer learning, Computer Vision, Deep
-          Learning, PyTorch.
-        </li>
-        <li>
-          <a
-            href="https://github.com/NamanZelawat/Gym/blob/master/pytorch/transfer_learning.ipynb"
-            >Code</a
-          >
-        </li>
-      </ul>
+      <h3>Transfer learning using PyTorch</h3>
+      <hr />
+      <p>
+        I utilized pretrained EfficientNet-B0 weights to classify specific
+        subcategories of the Food-101 dataset, testing the model’s
+        generalization on real-world data beyond the test set. To streamline the
+        workflow, I developed custom wrappers that simplified data preparation,
+        training, evaluation, and visualization, making the experimentation
+        process more efficient and reproducible.
+      </p>
+      <br />
+      <img
+        src="./assets/transfer.png"
+        alt="Image patches"
+        ,
+        width="300"
+        style="display: block; margin-left: auto; margin-right: auto"
+      />
+      <br />
+      <p>
+        <strong>Domain</strong>: Transfer learning, Computer Vision, Deep
+        Learning, PyTorch.
+      </p>
+      <p>
+        <strong>Code</strong>:
+        <a
+          href="https://github.com/NamanZelawat/Gym/blob/master/pytorch/transfer_learning.ipynb"
+          >Link</a
+        >
+      </p>
 
-      <li>
-        <strong>Fashion MNIST solution in PyTorch</strong>
-      </li>
-      <ul>
-        <li>
-          I worked on predictions using the FashionMNIST dataset, modularizing
-          the code to simplify training and testing across three different
-          models. The implementation was designed to be device-agnostic,
-          ensuring compatibility across CPUs and GPUs, and included detailed
-          time analysis for both training and testing phases.
-        </li>
-        <img
-          src="./assets/fashion.png"
-          alt="Image patches"
-          ,
-          width="300"
-          style="display: block; margin-left: auto; margin-right: auto"
-        />
-        <li><strong>Domain</strong>: Deep Learning, PyTorch.</li>
-        <li>
-          <a
-            href="https://github.com/NamanZelawat/Gym/blob/master/pytorch/CNN_computer_vision.ipynb"
-            >Code</a
-          >
-        </li>
-      </ul>
+      <h3>Fashion MNIST solution in PyTorch</h3>
+      <hr />
+      <p>
+        I worked on predictions using the FashionMNIST dataset, modularizing the
+        code to simplify training and testing across three different models. The
+        implementation was designed to be device-agnostic, ensuring
+        compatibility across CPUs and GPUs, and included detailed time analysis
+        for both training and testing phases.
+      </p>
+      <br />
+      <img
+        src="./assets/fashion.png"
+        alt="Image patches"
+        ,
+        width="300"
+        style="display: block; margin-left: auto; margin-right: auto"
+      />
+      <br />
+      <p><strong>Domain</strong>: Deep Learning, PyTorch.</p>
+      <p>
+        <strong>Code</strong>:
+        <a
+          href="https://github.com/NamanZelawat/Gym/blob/master/pytorch/CNN_computer_vision.ipynb"
+          >Link</a
+        >
+      </p>
 
-      <li>
-        <strong>Tic-Tac-Toe</strong>
-      </li>
-      <ul>
-        <li>
-          Adversarial tic-tac-toe implementation using minimax algorithm in C++.
-        </li>
-        <img
-          src="./assets/tictactoe.png"
-          alt="Image patches"
-          ,
-          width="300"
-          style="display: block; margin-left: auto; margin-right: auto"
-        />
-        <li><strong>Domain</strong>: Artificial intelligence, Algorithm.</li>
-        <li>
-          <a href="https://github.com/NamanZelawat/Tic-tac-toe">Code</a>
-        </li>
-      </ul>
-    </ul>
+      <h3>Tic-Tac-Toe</h3>
+      <hr />
+      <p>
+        Adversarial tic-tac-toe implementation using minimax algorithm in C++.
+      </p>
+      <br />
+      <img
+        src="./assets/tictactoe.png"
+        alt="Image patches"
+        ,
+        width="300"
+        style="display: block; margin-left: auto; margin-right: auto"
+      />
+      <br />
+      <p><strong>Domain</strong>: Artificial intelligence, Algorithm.</p>
+      <p>
+        <strong>Code</strong>:
+        <a href="https://github.com/NamanZelawat/Tic-tac-toe">Link</a>
+      </p>
+    </div>
   </body>
 </html>
