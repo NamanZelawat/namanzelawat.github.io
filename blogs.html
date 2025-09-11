@@ -24,13 +24,65 @@
         color: #111;
       }
       body {
-        max-width: 750px;
+        max-width: 800px;
+        padding: 1.5rem 0rem;
+      }
+
+      h3 {
+        margin: 0;
+      }
+
+      .latex-card {
+        background: #ffffff;
+        border: 1px solid #d1d1d1;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+        /* max-width: 600px; */
+        width: 100%;
+        padding: 2.5rem 3rem;
+        color: #333;
+        line-height: 1.6;
+        border-radius: 4px;
+      }
+
+      .blog-entry {
+        background: #ffffff;
+        border: 1px solid #d1d1d1;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+        /* max-width: 600px; */
+        width: 100%;
+        padding: 2rem 1.5rem;
+        color: #333;
+        line-height: 1.6;
+        border-radius: 4px;
       }
     </style>
   </head>
   <body>
-    <h1>Blogs</h1>
+    <div class="latex-card">
+      <h1>Blogs</h1>
 
-    <ul></ul>
+      <div class="blog-entry">
+        <h3>Cross account KEDA deployment</h3>
+        <hr />
+        <p>
+            Event based autoscaling is a powerful technique to optimize resource
+            usage and cost in cloud environments. In this blog, I will show you how
+            to set up KEDA (Kubernetes Event-Driven Autoscaling) to enable
+            event-based autoscaling across different AWS accounts.
+        </p>
+        <br />
+        <p>
+            <strong>Domain</strong>: Paper implementation, Computer Vision, Deep
+            Learning, PyTorch.
+        </p>
+        <p>
+            <strong>Source</strong>:
+            <a
+            href=https://global.moneyforward-dev.jp/2023/12/12/cross-account-keda-deployment/
+            >Link</a
+            >
+        </p>
+      </div>
+    </div>
   </body>
 </html>
