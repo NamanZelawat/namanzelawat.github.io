@@ -94,6 +94,71 @@
       .nav-bar a:hover {
         opacity: 0.7; /* Just enough to hint interactivity */
       }
+
+      .container {
+        display: flex;
+        flex-direction: column;
+        /* align-items: center; */
+        /* max-width: 1200px; */
+        margin: 0 auto;
+        padding: 2rem;
+        /* background: #fff; */
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+        /* border-radius: 8px; */
+      }
+      .content-wrapper {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        width: 100%;
+      }
+      @media (min-width: 768px) {
+        .content-wrapper {
+          flex-direction: row;
+          justify-content: space-between;
+          /* align-items: center; */
+        }
+      }
+      .text-section {
+        flex: 1;
+        padding-right: 2rem;
+      }
+      .image-section {
+        flex: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .image-section img {
+        max-width: 400px;
+        height: 400px;
+        width: 100%;
+        object-fit: cover;
+        border-radius: 8px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      }
+      h1 {
+        font-size: 2.2rem;
+        line-height: 1.2;
+        margin-top: 0;
+        color: #1a1a1a;
+      }
+      p {
+        font-size: 1.1rem;
+        line-height: 1.6;
+      }
+      .link-button {
+        display: inline-block;
+        padding: 0.75rem 1.5rem;
+        background: #1a1a1a;
+        color: #fff;
+        text-decoration: none;
+        border-radius: 5px;
+        transition: background-color 0.3s ease;
+      }
+      .link-button:hover {
+        background: #555;
+      }
     </style>
   </head>
   <body>
@@ -112,6 +177,13 @@
           weights from PyTorch models, which significantly improved the overall
           accuracy.
         </li>
+        <img
+          src="./assets/transformer.png"
+          alt="Image patches"
+          ,
+          width="300"
+          style="display: block; margin-left: auto; margin-right: auto"
+        />
         <li>
           <strong>Domain</strong>: Paper implementation, Computer Vision, Deep
           Learning, PyTorch.
@@ -136,6 +208,13 @@
           preparation, training, evaluation, and visualization, making the
           experimentation process more efficient and reproducible.
         </li>
+        <img
+          src="./assets/transfer.png"
+          alt="Image patches"
+          ,
+          width="300"
+          style="display: block; margin-left: auto; margin-right: auto"
+        />
         <li>
           <strong>Domain</strong>: Transfer learning, Computer Vision, Deep
           Learning, PyTorch.
@@ -159,6 +238,13 @@
           ensuring compatibility across CPUs and GPUs, and included detailed
           time analysis for both training and testing phases.
         </li>
+        <img
+          src="./assets/fashion.png"
+          alt="Image patches"
+          ,
+          width="300"
+          style="display: block; margin-left: auto; margin-right: auto"
+        />
         <li><strong>Domain</strong>: Deep Learning, PyTorch.</li>
         <li>
           <a
