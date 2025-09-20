@@ -56,12 +56,39 @@
         line-height: 1.6;
         border-radius: 4px;
       }
+      .nav-bar {
+        text-align: center;
+        font-family: "Computer Modern", serif; /* Optional: for LaTeX aesthetic */
+        font-size: 1.1em;
+        margin-top: 0;
+      }
+
+      .nav-bar a {
+        text-decoration: none;
+        color: inherit; /* Keeps it neutral, blends with text */
+        padding: 0 0.3em;
+        cursor: pointer;
+        transition: opacity 0.2s ease;
+      }
+
+      .nav-bar a:hover {
+        opacity: 0.7; /* Just enough to hint interactivity */
+      }
     </style>
   </head>
   <body>
     <div class="latex-card">
       <h1>Blogs</h1>
-
+      <div class="nav-bar">
+        <a href="./index.html">Home</a> |
+        <a
+          href="https://drive.google.com/file/d/1I6RNcR3gQjctzHIRf0vRxLUb86F5LEcZ/view?usp=sharing"
+          >CV</a
+        >
+        | <a href="./index.html#experience">Experience</a> |
+        <a href="./index.html#education">Education</a> |
+        <a href="./projects.html">Projects</a>
+      </div>
       <div class="blog-entry">
         <h3>Cross account KEDA deployment</h3>
         <hr />
