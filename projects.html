@@ -79,12 +79,13 @@
       <h3>Single image reconstruction</h3>
       <hr />
       <p>
-        I implemented the Vision Transformer (ViT) architecture from scratch,
-        visualizing the embedding creation process and training the model on the
-        Food-101 dataset for image classification. To further enhance
-        performance, I incorporated transfer learning by leveraging pretrained
-        weights from PyTorch models, which significantly improved the overall
-        accuracy.
+        I leveraged the diffusion model Zero123 to effectively generate missing
+        perspectives of an object. The reconstruction process utilized six
+        different perspectives to perform highly accurate differential
+        rendering. A crucial part of the implementation involved a stepwise
+        incremental fitting strategy, where the object's silhouette (mask) was
+        optimized first, which was then followed by the optimization of the
+        object's texture.
       </p>
       <br />
       <img
@@ -141,12 +142,12 @@
       <h3>Textured differential rendering</h3>
       <hr />
       <p>
-        I implemented the Vision Transformer (ViT) architecture from scratch,
-        visualizing the embedding creation process and training the model on the
-        Food-101 dataset for image classification. To further enhance
-        performance, I incorporated transfer learning by leveraging pretrained
-        weights from PyTorch models, which significantly improved the overall
-        accuracy.
+        This project involved using PyTorch3D to deform an initial spherical
+        source mesh into the shape of a target cow mesh. The mesh fitting was
+        achieved by performing differential rendering across 20 different views.
+        To ensure highly accurate and smooth reconstruction, the optimization
+        incorporated a combined loss function utilizing RGB, silhouette,
+        Laplacian, Edge, and Normal loss components.
       </p>
       <br />
       <img
